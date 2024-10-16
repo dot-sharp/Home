@@ -1,0 +1,200 @@
+
+/* CSS updated by github.com/casparml */
+
+:root {
+    --color-primary: #FE5200;
+    --color-secondary: #FE7D3F;
+    --color-primary-accent: #FDBC9E;
+    --color-text: #FBFBFB;
+    --color-text-accent: #909090;
+    --color-backround: #131213;
+    --color-backround-secondary: #000000;
+    --color-backround-accent: #050505;
+}
+
+/* Global */
+* {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    color: var(--color-text);
+}
+
+body {
+    background-color: var(--color-backround);
+}
+
+nav {
+    margin: 1.5rem .5rem;
+    padding: 16px 32px;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1, p {
+    color: var(--color-text);
+    margin: 0;
+}
+
+section {
+    margin: 2rem;
+}
+
+embed {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: var(--color-backround-secondary);
+}
+
+button {
+    border: none;
+    border-radius: .75rem;
+    padding: 1rem;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--color-secondary);
+    transition: 350ms cubic-bezier(0.45, 0.05, 0.55, 0.95);
+}
+
+button:not(:hover) {
+    background-color: var(--color-primary);
+    transition: 550ms cubic-bezier(0.45, 0.05, 0.55, 0.95);
+}
+
+/* Navbar */
+.navbar-logo {
+    color: var(--color-text);
+    text-decoration: none;
+    display: flex;
+    text-align: center;
+    font-weight: bold;
+    font-size: 33pt;
+}
+
+.navbar-logo:hover p {
+    color: var(--color-secondary);
+    transition: 350ms cubic-bezier(0.45, 0.05, 0.55, 0.95);
+}
+
+.navbar-logo:not(:hover) p {
+    color: var(--color-primary);
+    transition: 550ms cubic-bezier(0.45, 0.05, 0.55, 0.95);
+}
+
+.navbar-left {
+    float: left;
+}
+
+.navbar-right {
+    float: right;
+}
+
+.github-button {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.github-icon {
+	font-size: 1.5rem;
+	color: var(--color-text);
+}
+
+/* About */
+.about {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 1rem;
+}
+
+.about-title {
+    padding-bottom: 1rem;
+    font-size: 15pt;
+}
+
+/* Footer */
+footer { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-backround-accent);
+    position: fixed;
+    bottom: 0; 
+    left: 0; 
+    width: 100%;
+    height: 4rem;
+    z-index: 2;
+}
+
+.footer__link {
+    text-decoration-thickness: 3px;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+}
+
+.footer__link:hover {
+    text-decoration-color: var(--color-secondary);
+    transition: 350ms cubic-bezier(0.45, 0.05, 0.55, 0.95);
+}
+
+.footer__link:not(:hover) {
+    text-decoration-color: var(--color-primary);
+    transition: 550ms cubic-bezier(0.45, 0.05, 0.55, 0.95);
+}
+
+/* Screen sizes */
+@media (max-width: 767px) {
+
+    .navbar-logo {
+        padding-top: 1rem;
+        font-size: 27pt;
+    }
+
+    /* Logo hover overide for phone */
+    .navbar-logo:not(:hover) p {
+        color: var(--color-primary);
+    }
+
+    /* Logo centered fix */
+    ul {
+        justify-content: center;
+    }
+
+    /* GitHub button hidden */
+    .navbar-right {
+        display:none;
+    }
+
+    .about-title {
+        padding-top: 2rem;
+        font-size: 14pt;
+    }
+
+    /* Footer hover overide for phone */
+    .footer__link:not(:hover) {
+        text-decoration-color: var(--color-primary);
+    }
+}
