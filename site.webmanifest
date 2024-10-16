@@ -1,0 +1,24 @@
+{
+    "name":"dotSharp",
+    "short_name":".Sharp",
+    "description": "dotSharp website development",
+    "start_url": "index.html",
+    "theme_color":"#FE5200",
+    "background_color":"#131213",
+    "orientation": "any",
+    "display":"standalone",
+    "icons": [
+        {
+            "src":"assets/images/apple-touch-icon.png",
+            "sizes":"180x180",
+            "type":"image/png"
+        },
+        {
+            "src":"assets/images/logo.png",
+            "sizes":"64x64",
+            "type":"image/x-png"
+        }
+    ],
+    "lang": "en",
+    "scope": "/"
+}
