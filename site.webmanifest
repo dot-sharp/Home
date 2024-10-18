@@ -9,14 +9,19 @@
     "display":"standalone",
     "icons": [
         {
-            "src":"assets/images/apple-touch-icon.png",
+            "src":"assets/images/apple-touch-icon_180x180.png",
             "sizes":"180x180",
             "type":"image/png"
         },
         {
             "src":"assets/images/logo.png",
             "sizes":"64x64",
-            "type":"image/x-png"
+            "type":"image/png"
+        },
+        {
+            "src":"assets/images/logo-away.png",
+            "sizes":"64x64",
+            "type":"image/png"
         }
     ],
     "lang": "en",

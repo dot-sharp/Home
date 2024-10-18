@@ -1,5 +1,9 @@
 
-/* CSS updated by github.com/casparml */
+@font-face {
+    font-family: Acumin Variable Concept;
+    src: url('/assets/fonts/AcuminVariableConcept.otf')  format('opentype');
+}
+
 
 :root {
     --color-primary: #FE5200;
@@ -17,7 +21,7 @@
     max-width: 100%;
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Acumin Variable Concept', 'Poppins', sans-serif;
     color: var(--color-text);
 }
 
@@ -82,27 +86,34 @@ button:not(:hover) {
 }
 
 /* Navbar */
-.navbar-logo {
+.navbar-logo__link {
+    font-style: italic;
+    font-weight: bold;
+    letter-spacing: .05rem;
     color: var(--color-text);
     text-decoration: none;
     display: flex;
     text-align: center;
-    font-weight: bold;
     font-size: 33pt;
 }
 
-.navbar-logo:hover p {
+.navbar-logo__link p {
+    padding-left: .3rem;
+}
+
+.navbar-logo__link:hover p {
     color: var(--color-secondary);
     transition: 350ms cubic-bezier(0.45, 0.05, 0.55, 0.95);
 }
 
-.navbar-logo:not(:hover) p {
+.navbar-logo__link:not(:hover) p {
     color: var(--color-primary);
     transition: 550ms cubic-bezier(0.45, 0.05, 0.55, 0.95);
 }
 
 .navbar-left {
     float: left;
+    
 }
 
 .navbar-right {
@@ -168,13 +179,13 @@ footer {
 /* Screen sizes */
 @media (max-width: 767px) {
 
-    .navbar-logo {
+    .navbar-logo__link {
         padding-top: 1rem;
         font-size: 27pt;
     }
 
     /* Logo hover overide for phone */
-    .navbar-logo:not(:hover) p {
+    .navbar-logo__link:not(:hover) p {
         color: var(--color-primary);
     }
 
@@ -196,5 +207,9 @@ footer {
     /* Footer hover overide for phone */
     .footer__link:not(:hover) {
         text-decoration-color: var(--color-primary);
+    }
+
+    .footer__span {
+        font-size: 11pt;
     }
 }
