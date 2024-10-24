@@ -6,7 +6,7 @@
 
 
 :root {
-    --color-primary: #FE5200;
+    --color-primary: #FF7233;
     --color-secondary: #FE7D3F;
     --color-primary-accent: #FDBC9E;
     --color-text: #FBFBFB;
@@ -16,6 +16,7 @@
     --color-backround-accent: #050505;
 
     --white: #FFF;
+    --black: #000;
 }
 
 /* Global */
@@ -129,13 +130,13 @@ button:not(:hover) {
 .github-icon {
     padding-right: 1rem;
 	font-size: 22pt;
-	color: var(--white);
+	color: var(--black);
 }
 
 .button__span {
     font-size: 15pt;
     font-weight: 500;
-    color: var(--white);
+    color: var(--black);
 }
 
 /* About */
