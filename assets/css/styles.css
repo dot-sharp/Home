@@ -14,6 +14,8 @@
     --color-backround: #131213;
     --color-backround-secondary: #000000;
     --color-backround-accent: #050505;
+
+    --white: #FFF;
 }
 
 /* Global */
@@ -119,20 +121,21 @@ button:not(:hover) {
     float: right;
 }
 
-.github-button {
+.button__link {
     display: flex;
     align-items: center;
-    gap: 1rem;
 }
 
 .github-icon {
+    padding-right: 1rem;
 	font-size: 22pt;
-	color: var(--color-text);
+	color: var(--white);
 }
 
 .button__span {
     font-size: 15pt;
     font-weight: 500;
+    color: var(--white);
 }
 
 /* About */
