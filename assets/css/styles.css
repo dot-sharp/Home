@@ -126,8 +126,13 @@ button:not(:hover) {
 }
 
 .github-icon {
-	font-size: 1.5rem;
+	font-size: 22pt;
 	color: var(--color-text);
+}
+
+.button__span {
+    font-size: 15pt;
+    font-weight: 500;
 }
 
 /* About */
