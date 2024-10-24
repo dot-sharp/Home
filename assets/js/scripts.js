@@ -17,4 +17,4 @@ window.onload = function () {
 }
 
 // Get current year
-document.getElementById("currentYear").innerHTML = (new Date().getFullYear());
+// document.getElementById("currentYear").innerHTML = (new Date().getFullYear());
